@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain Screening Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/illustration-styles.css">
+</head>
+<body>
+    
+    <!-- <div class="main"> -->
+        <button class="closeBtn" onclick="closeDiagram()"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <div class="diagram">
+            <div class="image">
+                <img src="images/symptoms.png" usemap="#image-map">
+
+                <map name="image-map">
+                    <area title="Head" coords="216,56,15" shape="circle" onclick="showHead()">
+                    <area title="Shoulders" coords="148,175,15" shape="circle" onclick="showShoulders()">
+                </map>
+            </div>
+
+            <div class="choices" id="head">
+                <h3>Head</h3>
+                <form id="form-3">
+                    <div><input type="radio" name="symptom"><label>Migraine</label></div>
+                    <div><input type="radio" name="symptom"><label>Headache</label></div>
+                    <div><input type="radio" name="symptom"><label>Dehydration</label></div>
+                    <div><input type="radio" name="symptom"><label>Hypotension</label></div>
+                </form>
+            </div>
+        </div>
+    <!-- </div> -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

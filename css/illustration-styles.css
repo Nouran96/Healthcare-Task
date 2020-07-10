@@ -1,0 +1,42 @@
+body {
+    background-color: #2A285A;
+    overflow-y: auto;
+}
+
+area {cursor: pointer;}
+
+.diagram {
+    margin-top: 15%;
+    width: 90%;
+    background: #171E46;
+    padding-left: 4%;
+    position: relative;
+    min-height: 92vh;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -15%;
+}
+
+.closeBtn {
+    color: #171E46;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+    font-size: 1.4em;
+    margin: 1rem;
+}
+
+.choices {
+    background: #DB3730;
+    color: white;
+}
+
+.choices h3 {
+    text-transform: uppercase;
+    border-bottom: 2px ridge rgb(59, 58, 58);
+}
