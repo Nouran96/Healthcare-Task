@@ -1,0 +1,61 @@
+/* Meter Properties */
+#meter img {min-height: 25rem;}
+
+#meter input[type='radio'] {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+#meter label {
+    padding-left: 2px;
+    vertical-align: middle;
+}
+
+/* Pain Description */
+#pain-desc {
+    max-height: 25rem;
+    overflow-y: scroll;
+    background-color: white;
+    border: 1px solid #555658;
+}
+
+#pain-desc > ul {
+    padding: .5rem 0;
+    margin: 0;
+}
+
+#pain-desc .categories {padding-left: 1rem;}
+
+#pain-desc h5,
+#pain-desc h6,
+#pain-desc .level {
+    text-transform: uppercase;
+    color: #555658;
+    margin-bottom: 0;
+}
+
+#pain-desc .level {
+    font-weight: bold;
+}
+
+#pain-desc p {
+    font-size: .8em;
+    color: #555658;
+}
+
+#pain-desc li {
+    border-bottom: 1px solid #555658;
+    padding: .7rem 0 0;
+    margin: 0 1rem;
+}
+
+#pain-desc .mild h5 {color: #69E556}
+#pain-desc .moderate h5 {color: #fe9d3d}
+#pain-desc .severe h5 {color: #DB3730}
+
+/* Pain Frequency */
+#frequency h5 {
+    color: #23285A;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
