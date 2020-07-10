@@ -32,6 +32,16 @@ textarea {
     height: 13.5rem;
 }
 
+input[type='radio'] {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+label {
+    padding-left: 2px;
+    vertical-align: middle;
+}
+
 h1 {
     color: #23285A;
     width: 40%;
@@ -47,7 +57,6 @@ h1 {
 
 #sections li {
     min-height: 9rem;
-    /* min-height: calc(100vh / 4); */
     font-size: 1.4em;
     color: white;
     padding: 1rem;
@@ -55,30 +64,9 @@ h1 {
 }
 
 #sections li:nth-child(1) {background-color: #23285A;}
-
-#sections li:nth-child(1)::after {
-    content: '';
-    width: 45px;
-    height: 45px;
-    background: #eee;
-    transform: rotate(-45deg);
-    position: absolute;
-    left: 89%;
-    top: 43%;
-}
-
 #sections li:nth-child(2) {background-color: #2A285A}
 #sections li:nth-child(3) {background-color: #3D3D59}
 #sections li:nth-child(4) {background-color: #555658}
-
-/* Question Properties */
-#question {padding-right: 2rem;}
-#question h5 {
-    color: #23285A;
-    padding-bottom: .5rem;
-    border-bottom: 1.5px solid #23285A;
-    font-size: 1em;
-}
 
 /* Continue Button */
 #continue button {

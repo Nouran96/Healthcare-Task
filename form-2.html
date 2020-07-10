@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain Screening Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form-2-styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Pain Screening Form</h1>
+        <div class="row mb-5">
+            <div class="col-1 d-flex justify-content-center"><img src="images/numbering.png"></div>
+            <div class="col-11 row">
+                <div class="col-3 p-0">
+                    <ul class="d-flex flex-column" id="sections">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                    </ul>
+                </div>
+                <div id="content" class="col-9 pt-5">
+                    <div class="row mb-4 pb-3">
+                        <div class="col-5 d-flex question p-0">
+                            <h4 class="col-9">ARE YOU TAKING
+                                ANY MEDICINE?</h4>
+                            <form class="col-3 p-0" id="form-2">
+                                <div><input type="radio" name="takingMedicine"><label>Yes</label></div>
+                                <div><input type="radio" name="takingMedicine"><label>No</label></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="question col-5">
+                            <h4>PAIN BURDEN</h4>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <p class="col-5 p-0">In the past 6 months, how many
+                            days of work you missed because
+                            of your pain?</p>
+                        <input type="number" name="daysMissed" form="form-2" class="col-2 ml-4 form-control" placeholder="Days" min="0" max="180">
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-5 question p-0 align-self-center">
+                            <h4>PAIN TYPE</h4>
+                            <p class="illustration">Use the illustration to
+                                choose your pain type</p>
+                        </div>
+                        <div class="col-4 diagram">
+                            <img src="images/diagram_preview.png">
+                        </div>
+                    </div>
+
+                    <div class="row d-flex flex-column align-items-end mx-4" id="continue">
+                        <button class="col-4 mb-2">Continue</button>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

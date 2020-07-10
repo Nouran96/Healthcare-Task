@@ -1,0 +1,38 @@
+#sections li:nth-child(2)::after {
+    content: '';
+    width: 45px;
+    height: 45px;
+    background: #eee;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 89%;
+    top: 43%;
+}
+
+#sections li {
+    min-height: 10.2rem;
+}
+
+input[type="number"] {height: 3rem;}
+
+#content {
+    padding: 0 5rem;
+}
+
+/* Questions */
+.question {
+    padding-bottom: .5rem;
+    border-bottom: 1.5px solid #23285A;
+    padding-left: 0;
+}
+
+.question h4 {
+    color: #23285A;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+/* Illustration */
+p.illustration {font-size: 1.2em;}
+
+.diagram > img {cursor: pointer;}

@@ -1,15 +1,25 @@
+#sections li:nth-child(1)::after {
+    content: '';
+    width: 45px;
+    height: 45px;
+    background: #eee;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 89%;
+    top: 43%;
+}
+
+/* Question Properties */
+#question {padding-right: 2rem;}
+#question h5 {
+    color: #23285A;
+    padding-bottom: .5rem;
+    border-bottom: 1.5px solid #23285A;
+    font-size: 1em;
+}
+
 /* Meter Properties */
 #meter img {min-height: 25rem;}
-
-#meter input[type='radio'] {
-    width: 1.2em;
-    height: 1.2em;
-}
-
-#meter label {
-    padding-left: 2px;
-    vertical-align: middle;
-}
 
 /* Pain Description */
 #pain-desc {
