@@ -85,6 +85,7 @@ h1 {
 #continue button a {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 #continue p {
