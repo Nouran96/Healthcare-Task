@@ -1,5 +1,15 @@
-function showHead() {}
+function showHead() {
+    document.querySelector('#shoulder').style.display = 'none';
+    document.querySelector('#head').style.display = 'block';
+    document.querySelector('#confirm').style.display = 'block';
+}
 
-function showShoulders() {}
+function showShoulders() {
+    document.querySelector('#head').style.display = 'none';
+    document.querySelector('#shoulder').style.display = 'block';
+    document.querySelector('#confirm').style.display = 'block';
+}
 
-function closeDiagram() {}
+function closeDiagram() {
+    window.history.back();
+}

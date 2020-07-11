@@ -14,10 +14,38 @@ area {cursor: pointer;}
     min-height: 92vh;
 }
 
+.image {
+    width: 75%;
+    position: relative;
+}
+
 .image img {
     max-width: 100%;
     height: auto;
     margin-top: -15%;
+}
+
+.image a div {
+    position: absolute;
+    width: 2.5%;
+    height: 3%;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image a div.shoulder-spot {
+    /* left: 16.7%;
+    top: 5.5%; */
+    left: 15.7%;
+    top: 4.5%;
+}
+
+.image a div.head-spot {
+    /* top: -10.5%;
+    left: 24.5%; */
+    top: -13.5%;
+    left: 22.5%;
 }
 
 .closeBtn {
@@ -29,14 +57,88 @@ area {cursor: pointer;}
     z-index: 2;
     font-size: 1.4em;
     margin: 1rem;
+    display: inline-block;
 }
 
 .choices {
     background: #DB3730;
     color: white;
+    height: fit-content;
+    width: 27%;
+    margin-top: -3%;
+    margin-left: 71%;
+    position: absolute;
+    border-radius: 0 20px 20px 0;
+    display: none;
 }
 
 .choices h3 {
     text-transform: uppercase;
-    border-bottom: 2px ridge rgb(59, 58, 58);
+    border-bottom: 2px inset rgb(148, 33, 33);
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+.choices h3::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #DB3730;
+    transform: rotate(-45deg);
+    top: 35%;
+    left: -4%;
+}
+
+.choices form {
+    margin-left: 2.5rem;
+}
+
+.choices form div {
+    padding: .7rem 1rem;
+    font-size: 1.2em;
+    border-bottom: 2px inset rgb(148, 33, 33);
+    display: flex;
+}
+
+.choices form div:last-of-type {border-bottom: none}
+
+.choices form div label {
+    vertical-align: bottom;
+    padding-left: 10px;
+}
+
+#confirm {
+    position: absolute;
+    /* top: 60%;
+    left: 79%; */
+    margin-top: 35%;
+    margin-left: 75%;
+    padding: .5rem 1rem;
+    width: 15%;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: none;
+}
+
+#confirm button a {
+    color: #171E46;
+    text-decoration: none;
+}
+
+@media (max-width: 1120px) {
+    #confirm {
+        margin-top: 44%;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 920px) {
+    .choices h3 {font-size: 1.5em;}
+
+    .choices form div {
+        font-size: 1em;
+    }
 }

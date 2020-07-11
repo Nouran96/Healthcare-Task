@@ -12,15 +12,17 @@
 <body>
     
     <!-- <div class="main"> -->
-        <button class="closeBtn" onclick="closeDiagram()"><i class="fa fa-times" aria-hidden="true"></i></button>
-        <div class="diagram">
+        <a href="form-2.html" class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="diagram d-flex">
             <div class="image">
                 <img src="images/symptoms.png" usemap="#image-map">
+                <a onclick="showHead()"><div class="head-spot"></div></a>
+                <a onclick="showShoulders()"><div class="shoulder-spot"></div></a>
 
-                <map name="image-map">
+                <!-- <map name="image-map">
                     <area title="Head" coords="216,56,15" shape="circle" onclick="showHead()">
                     <area title="Shoulders" coords="148,175,15" shape="circle" onclick="showShoulders()">
-                </map>
+                </map> -->
             </div>
 
             <div class="choices" id="head">
@@ -32,6 +34,18 @@
                     <div><input type="radio" name="symptom"><label>Hypotension</label></div>
                 </form>
             </div>
+
+            <div class="choices" id="shoulder">
+                <h3>Shoulder</h3>
+                <form id="form-3">
+                    <div><input type="radio" name="symptom"><label>Tendon Inflammation</label></div>
+                    <div><input type="radio" name="symptom"><label>Instability</label></div>
+                    <div><input type="radio" name="symptom"><label>Arthritis</label></div>
+                    <div><input type="radio" name="symptom"><label>Fracture</label></div>
+                </form>
+            </div>
+
+            <button id="confirm"><a href="form-2.html">Confirm</a></button>
         </div>
     <!-- </div> -->
 

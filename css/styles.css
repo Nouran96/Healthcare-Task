@@ -11,6 +11,8 @@ ul {
     list-style-type: none;
 }
 
+a:hover {text-decoration: none;}
+
 #content {
     background-color: #eee;
 }
@@ -78,6 +80,11 @@ h1 {
     font-size: 1.2em;
     padding: .5rem .2rem;
     font-weight: bold;
+}
+
+#continue button a {
+    color: white;
+    text-decoration: none;
 }
 
 #continue p {
