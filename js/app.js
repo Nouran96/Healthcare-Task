@@ -10,9 +10,17 @@ function showShoulders() {
     document.querySelector('#confirm').style.display = 'block';
 }
 
+function closeModal() {
+    document.querySelector('.modal').style.display = 'none';
+}
+
+
+
 let form1 = document.forms["form-1"];
 let form2 = document.forms["form-2"];
 let form3 = document.forms["form-3"];
+let registerForm = document.forms["register"];
+let loginForm = document.forms["login"];
 
 let daysMissed = document.querySelector("#daysMissed");
 
@@ -66,4 +74,41 @@ if(form3) {
         localStorage.setItem("painType", form3["symptom"].value);
         window.location.href="form-2.html";
     });
+}
+
+if(registerForm) {
+
+    registerForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if(registerForm["password"].value == registerForm["passwordConfirmation"].value) {
+            sessionStorage.setItem("username", registerForm["username"].value);
+            sessionStorage.setItem("password", registerForm["password"].value);
+            sessionStorage.setItem("birthDate", registerForm["birthDate"].value);
+
+            window.location.href="index.html";
+        } else {
+            document.querySelector('.modal').style.display = 'block';
+        }
+    })
+
+}
+
+if(loginForm) {
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if(loginForm["password"].value == sessionStorage.getItem("password") && 
+            loginForm["username"].value == sessionStorage.getItem("username")) {
+
+            if(loginForm["rememberme"].checked) {
+                localStorage.setItem("username", loginForm["username"].value);
+                localStorage.setItem("password", loginForm["password"].value);
+            }
+            
+            window.location.href="form-1.html";
+        } else {
+            document.querySelector('.modal').style.display = 'block';
+        }
+    })
+
 }
