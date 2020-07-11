@@ -34,7 +34,8 @@ textarea {
     height: 13.5rem;
 }
 
-input[type='radio'] {
+input[type='radio'],
+input[type="checkbox"] {
     width: 1.2em;
     height: 1.2em;
 }
