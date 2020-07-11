@@ -27,25 +27,25 @@
 
             <div class="choices" id="head">
                 <h3>Head</h3>
-                <form id="form-3">
-                    <div><input type="radio" name="symptom"><label>Migraine</label></div>
-                    <div><input type="radio" name="symptom"><label>Headache</label></div>
-                    <div><input type="radio" name="symptom"><label>Dehydration</label></div>
-                    <div><input type="radio" name="symptom"><label>Hypotension</label></div>
+                <form name="form-3" id="form-3">
+                    <div><input type="radio" name="symptom" value="migraine" required checked><label>Migraine</label></div>
+                    <div><input type="radio" name="symptom" value="headache" required><label>Headache</label></div>
+                    <div><input type="radio" name="symptom" value="dehydration" required><label>Dehydration</label></div>
+                    <div><input type="radio" name="symptom" value="hypotension" required><label>Hypotension</label></div>
                 </form>
             </div>
 
             <div class="choices" id="shoulder">
                 <h3>Shoulder</h3>
-                <form id="form-3">
-                    <div><input type="radio" name="symptom"><label>Tendon Inflammation</label></div>
-                    <div><input type="radio" name="symptom"><label>Instability</label></div>
-                    <div><input type="radio" name="symptom"><label>Arthritis</label></div>
-                    <div><input type="radio" name="symptom"><label>Fracture</label></div>
+                <form>
+                    <div><input type="radio" name="symptom" value="tendonInflammation" form="form-3" required><label>Tendon Inflammation</label></div>
+                    <div><input type="radio" name="symptom" value="instability" form="form-3" required><label>Instability</label></div>
+                    <div><input type="radio" name="symptom" value="arthritis" form="form-3" required><label>Arthritis</label></div>
+                    <div><input type="radio" name="symptom" value="fracture" form="form-3" required><label>Fracture</label></div>
                 </form>
             </div>
 
-            <button id="confirm"><a href="form-2.html">Confirm</a></button>
+            <button id="confirm" type="submit" form="form-3">Confirm</button>
         </div>
     <!-- </div> -->
 

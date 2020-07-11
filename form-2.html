@@ -28,9 +28,9 @@
                         <div class="col-5 d-flex question p-0">
                             <h4 class="col-9">ARE YOU TAKING
                                 ANY MEDICINE?</h4>
-                            <form class="col-3 p-0" id="form-2">
-                                <div><input type="radio" name="takingMedicine"><label>Yes</label></div>
-                                <div><input type="radio" name="takingMedicine"><label>No</label></div>
+                            <form name="form-2" class="col-3 p-0" id="form-2">
+                                <div><input type="radio" name="takingMedicine" required value="yes"><label>Yes</label></div>
+                                <div><input type="radio" name="takingMedicine" required value="no"><label>No</label></div>
                             </form>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                         <p class="col-5 p-0">In the past 6 months, how many
                             days of work you missed because
                             of your pain?</p>
-                        <input type="number" name="daysMissed" form="form-2" class="col-2 ml-4 form-control" placeholder="Days" min="0" max="180">
+                        <input id="daysMissed" type="number" required name="daysMissed" form="form-2" class="col-2 ml-4 form-control" placeholder="Days" min="0" max="180">
                     </div>
 
                     <div class="row mb-4">
@@ -60,7 +60,8 @@
                     </div>
 
                     <div class="row d-flex flex-column align-items-end mx-4" id="continue">
-                        <button class="col-4 mb-2"><a href="form-3.html">Continue</a></button>
+                        <button id="continueBtn" class="col-4 mb-2" type="submit" disabled form="form-2">Continue</button>
+                        <!-- <button class="col-4 mb-2"><a href="form-3.html">Continue</a></button> -->
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
                     </div>
                 </div>
@@ -71,5 +72,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

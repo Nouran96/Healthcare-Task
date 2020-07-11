@@ -32,18 +32,18 @@
                                 from 0 to 10?</h5>
                         </div>
                         <div class="col-lg-2 col-6 row" id="meter">
-                            <form class="col-lg-6 col-4 p-0 mt-4 d-flex flex-column" id="form-1">
-                                <div><input type="radio" name="intensity"><label>00</label></div>
-                                <div><input type="radio" name="intensity"><label>01</label></div>
-                                <div><input type="radio" name="intensity"><label>02</label></div>
-                                <div><input type="radio" name="intensity"><label>03</label></div>
-                                <div><input type="radio" name="intensity"><label>04</label></div>
-                                <div><input type="radio" name="intensity"><label>05</label></div>
-                                <div><input type="radio" name="intensity"><label>06</label></div>
-                                <div><input type="radio" name="intensity"><label>07</label></div>
-                                <div><input type="radio" name="intensity"><label>08</label></div>
-                                <div><input type="radio" name="intensity"><label>09</label></div>
-                                <div><input type="radio" name="intensity"><label>10</label></div>
+                            <form name="form-1" class="col-lg-6 col-4 p-0 mt-4 d-flex flex-column" id="form-1">
+                                <div><input type="radio" name="intensity" value="0" required><label>00</label></div>
+                                <div><input type="radio" name="intensity" value="1" required><label>01</label></div>
+                                <div><input type="radio" name="intensity" value="2" required><label>02</label></div>
+                                <div><input type="radio" name="intensity" value="3" required><label>03</label></div>
+                                <div><input type="radio" name="intensity" value="4" required><label>04</label></div>
+                                <div><input type="radio" name="intensity" value="5" required><label>05</label></div>
+                                <div><input type="radio" name="intensity" value="6" required><label>06</label></div>
+                                <div><input type="radio" name="intensity" value="7" required><label>07</label></div>
+                                <div><input type="radio" name="intensity" value="8" required><label>08</label></div>
+                                <div><input type="radio" name="intensity" value="9" required><label>09</label></div>
+                                <div><input type="radio" name="intensity" value="10" required><label>10</label></div>
                             </form>
                             <div class="col-lg-6 col-4 p-0"><img src="images/meter.png"></div>
                         </div>
@@ -149,7 +149,7 @@
                             <p>In the past 6 months, what was
                                 the frequency of your pain?</p>
                             <div class="d-flex flex-column">
-                                <select name="frequency" form="form-1" class="custom-select mb-2">
+                                <select name="frequency" form="form-1" class="custom-select mb-2" required>
                                     <option value="onceEveryOtherMonth" selected>Once every other month</option>
                                     <option value="onceEveryMonth">Once every month</option>
                                     <option value="onceEveryWeek">Once every week</option>
@@ -162,7 +162,8 @@
                     </div>
 
                     <div class="row d-flex flex-column align-items-end mx-4" id="continue">
-                        <button class="col-4 mb-2"><a href="form-2.html">Continue</a></button>
+                        <button id="continueBtn" class="col-4 mb-2" type="submit" form="form-1" disabled>Continue</button>
+                        <!-- <button class="col-4 mb-2" disabled="true"><a href="form-2.html">Continue</a></button> -->
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
                     </div>
                 </div>
@@ -173,5 +174,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
