@@ -35,10 +35,29 @@
                     </div>
 
                     <div class="row d-flex flex-column align-items-end mx-4" id="continue">
-                        <button class="col-4 mb-2"><a href="form-4.html">Save</a></button>
+                        <button class="col-4 mb-2" onclick="showModal()">Save</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Data is saved</h5>
+              <button type="button" class="close" data-dismiss="modal" onclick="goToResults()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Your data is saved and you will see the results now.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="goToResults()" >Close</button>
+            </div>
+          </div>
         </div>
     </div>
 
@@ -48,5 +67,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="https://rawgit.com/chartjs/chartjs-plugin-annotation/master/chartjs-plugin-annotation.js"></script>
     <script src="js/chart.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -70,3 +70,13 @@ a {
     color: #555658;
     text-decoration: none;
 }
+
+@media (max-width: 992px) {
+    .main {
+        margin-top: 43%;
+    }
+
+    #register {
+        margin-top: 37%;
+    }
+}

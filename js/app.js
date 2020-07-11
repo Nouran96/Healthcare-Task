@@ -14,7 +14,14 @@ function closeModal() {
     document.querySelector('.modal').style.display = 'none';
 }
 
+function showModal() {
+    document.querySelector('.modal').style.display = 'block';
+}
 
+function goToResults() {
+    closeModal();
+    window.location.href="form-4.html";
+}
 
 let form1 = document.forms["form-1"];
 let form2 = document.forms["form-2"];
