@@ -19,6 +19,14 @@ let daysMissed = document.querySelector("#daysMissed");
 var event = new Event('change');
 
 if(form1) {
+
+    form1.addEventListener("change", () => {
+        if(form1.checkValidity()){
+
+            document.querySelector("#continueBtn").removeAttribute("disabled");
+        }
+    });
+
     form1.addEventListener('submit', function(e) {
         e.preventDefault();
         localStorage.setItem("intensity", form1["intensity"].value);
@@ -29,9 +37,6 @@ if(form1) {
 }
 
 if(form2) {
-
-    form2["takingMedicine"].value = localStorage.getItem("takingMedicine");
-    form2["daysMissed"].value = localStorage.getItem("daysMissed");
 
     daysMissed.addEventListener("change", () => {
         form2.dispatchEvent(event);

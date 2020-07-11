@@ -8,3 +8,19 @@
     left: 89%;
     top: 43%;
 }
+
+/* Questions */
+.question {
+    padding-bottom: .5rem;
+    border-bottom: 1.5px solid #23285A;
+    padding-left: 0;
+    margin-left: 2rem;
+}
+
+.question h4 {
+    color: #23285A;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.question p {font-size: 1.2em;}
